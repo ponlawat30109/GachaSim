@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Inventory/Inventory.uss?fileID=7433441132597879392&amp;guid=90384f5c267f794429021c0ca3fa4c8a&amp;type=3#Inventory" />
+    <ui:VisualElement name="root" class="root" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); background-color: rgba(44, 44, 44, 0); width: 50%;">
+        <ui:VisualElement name="inventoryPanel" class="inventory-panel" style="flex-direction: row; flex-wrap: wrap; margin-top: 16px; display: flex; translate: 0 0; top: 12%; left: 5%; bottom: 0; right: 0; position: absolute; width: 50%; height: 70%; align-items: center; justify-content: center; align-self: center; -unity-text-align: middle-center; align-content: center; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; border-bottom-left-radius: 12px; background-color: rgb(173, 215, 195); flex-basis: 0%; min-width: 300px; min-height: 0;">
+            <ui:ScrollView style="width: 494px; height: 736px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

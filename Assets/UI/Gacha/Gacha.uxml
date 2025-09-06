@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Gacha/Gacha.uss?fileID=7433441132597879392&amp;guid=c076916abd402764689d53d219af2e18&amp;type=3#Gacha" />
+    <ui:VisualElement name="root" class="root">
+        <ui:VisualElement name="background" class="background" style="flex-grow: 1; top: 0%; left: 0%; right: 0%; bottom: 0%;" />
+        <ui:VisualElement name="randomSpriteContainer" class="random-sprite-container" style="justify-content: space-around; align-self: center; align-items: stretch; flex-direction: column; position: absolute; top: 0%; -unity-text-align: middle-center; bottom: 0%;">
+            <ui:Image name="randomSprite" class="random-sprite" style="height: 600px; width: 600px; flex-grow: 1; -unity-background-scale-mode: scale-to-fit; background-size: contain; background-position-x: center; background-image: url(&quot;project://database/Assets/Sprite/ItemSprite/Banner.png?fileID=2800000&amp;guid=7005a78b6793c89439ad7546950910ee&amp;type=3#Banner&quot;); background-color: rgba(255, 255, 255, 0);" />
+        </ui:VisualElement>
+        <ui:Label name="remainingCount" text="100" class="remaining-count" style="top: 101px; right: 0; position: absolute; bottom: 1067px; left: 0; transform-origin: center; align-self: auto; align-items: auto; justify-content: flex-end; white-space: pre; -unity-text-align: middle-right; text-overflow: ellipsis; translate: 0% 0%; margin-left: 20px; display: flex; visibility: visible; overflow: visible; flex-basis: 0%; flex-direction: column;" />
+        <ui:VisualElement name="notifyArea" style="flex-grow: 1; width: 100%; height: 10%; position: absolute; -unity-text-align: middle-center; flex-direction: column; align-items: flex-end; justify-content: center; align-self: auto;">
+            <ui:Label name="announcementText" text="announcementText&#x9;" class="announcement-text" style="right: 0; -unity-text-align: middle-center; white-space: pre; text-overflow: clip; translate: 0% 0%; align-self: center;" />
+        </ui:VisualElement>
+        <ui:Button name="gachaButton" text="Gacha x1" class="gacha-button" style="translate: -122% -40%;" />
+        <ui:Button name="multiGachaButton" text="Gacha x10" class="gacha-button" />
+        <ui:VisualElement name="resultPanel" class="result-panel" style="flex-direction: row; flex-wrap: wrap; margin-top: 16px; display: none; translate: 0 0; top: 18%; left: auto; bottom: auto; right: auto; position: absolute; width: 50%; height: 50%; align-items: center; justify-content: center; align-self: center; -unity-text-align: middle-center; align-content: center; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; border-bottom-left-radius: 12px; background-color: rgb(255, 213, 165); flex-basis: 0%; min-width: 300px; min-height: 0;" />
+        <ui:Button text="X" name="closeResultButton" style="position: absolute; top: 17%; right: 24%; background-size: 100% 100%; align-items: auto; align-content: auto; justify-content: center; background-color: rgb(255, 81, 81); font-size: 48px; -unity-font-style: bold; height: 49px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; display: none;" />
+    </ui:VisualElement>
+</ui:UXML>

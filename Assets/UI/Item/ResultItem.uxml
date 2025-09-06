@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" editor-extension-mode="False">
+    <ui:VisualElement class="result-item" style="flex-direction: row; align-items: center; padding: 8px; gap: 8px; justify-content: flex-start; align-self: stretch; align-content: stretch;">
+        <ui:Image name="itemIconImage" class="result-icon" style="width: 48px; height: 48px; background-color: rgb(238, 238, 238); border-radius: 8px;" />
+        <ui:Label name="itemNameLabel" text="Item Name Item Name Item Name" class="result-name" style="font-size: 16px; color: rgb(51, 51, 51); width: 300px; min-width: auto; max-width: none; height: 66%; -unity-text-align: middle-left; -unity-font-style: bold; left: 5px;" />
+        <ui:Label name="itemRarityLabel" text="Rarity" class="result-rarity" style="font-size: 14px; color: rgb(255, 30, 30); min-width: 0; margin-left: 16px; display: none; right: auto; -unity-text-align: middle-left; height: 66%;" />
+    </ui:VisualElement>
+</ui:UXML>

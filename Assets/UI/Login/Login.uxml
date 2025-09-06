@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Login/Login.uss?fileID=7433441132597879392&amp;guid=e8fef11c02bcc4c44956cab001fab4f3&amp;type=3#Login" />
+    <ui:VisualElement name="root" class="root" style="font-size: 30px; -unity-font-style: bold;">
+        <ui:VisualElement name="background" class="background" style="flex-grow: 1; color: rgb(255, 112, 112);" />
+        <ui:TextField name="inputField" label="Enter username:" class="input-field" style="position: relative; align-items: stretch; justify-content: space-between; align-self: auto; align-content: center; margin-bottom: 10px; -unity-text-align: middle-center; white-space: normal; text-overflow: clip; background-color: rgba(170, 221, 195, 0.81); -unity-background-scale-mode: stretch-to-fill; margin-top: 10px; margin-left: 10px; margin-right: 10px; width: 640px; height: 60px; flex-direction: row; border-top-width: 0; border-right-width: 0.1px; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;" />
+        <ui:Button name="confirmButton" text="Confirm" class="confirm-button" style="-unity-text-outline-color: rgb(178, 178, 178); -unity-background-image-tint-color: rgb(255, 255, 255); height: 60px; width: 640px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;" />
+    </ui:VisualElement>
+</ui:UXML>
