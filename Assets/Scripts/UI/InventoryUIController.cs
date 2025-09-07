@@ -19,6 +19,12 @@ public class InventoryUIController : MonoBehaviour
         inventoryScrollView = inventoryPanel.Q<ScrollView>();
     }
 
+    public void SetInventoryPanelVisible(bool visible)
+    {
+        if (inventoryPanel != null)
+            inventoryPanel.style.display = visible ? DisplayStyle.Flex : DisplayStyle.None;
+    }
+
     public void DisplayInventory()
     {
         if (inventoryScrollView == null || ResultItemTemplate == null) return;

@@ -124,7 +124,9 @@ public class GachaUIController : MonoBehaviour
         resultPanel.style.display = DisplayStyle.Flex;
         closeResultButton.style.display = DisplayStyle.Flex;
         isResultPanelVisible = true;
+
         SetGachaButtonsEnabled(false);
+        InventoryManager.Instance.InventoryUI.SetInventoryPanelVisible(false);
     }
 
     public void HideResultPanel()
@@ -132,7 +134,9 @@ public class GachaUIController : MonoBehaviour
         resultPanel.style.display = DisplayStyle.None;
         closeResultButton.style.display = DisplayStyle.None;
         isResultPanelVisible = false;
+
         SetGachaButtonsEnabled(true);
+        InventoryManager.Instance.InventoryUI.SetInventoryPanelVisible(true);
     }
 
     public void ShowAnnouncementFromApi(RareAnnounce announce)
