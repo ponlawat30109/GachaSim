@@ -10,7 +10,7 @@ Users can interact with the gacha system visually, while all backend logic and d
 ## Important Configuration
 Before running the client, make sure to:
 - **Update the server address in the config file:** `Assets/Scripts/Manager/ServerConfig.cs`
-- Inside that file, change the BaseUrl value to match your deployed server address:
+- Inside that file, change the `RemoteUrl` value to match your deployed server address:
 
 ## Related Repository
 - **Server-side repo**: [GachaSimServer](https://github.com/ponlawat30109/GachaSimServer)
