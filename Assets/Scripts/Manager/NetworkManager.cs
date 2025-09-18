@@ -22,8 +22,8 @@ public class NetworkManager : Singleton<NetworkManager>
 
     public void Initialize()
     {
-        // var uri = new Uri("http://localhost:3000");
-        var uri = new Uri("http://172.236.153.97:3000");
+        // var uri = new Uri($"{ServerConfig.LocalUrl}");
+        var uri = new Uri($"{ServerConfig.RemoteUrl}");
         Socket = new SocketIOUnity(uri, new SocketIOOptions
         {
             Query = new Dictionary<string, string> { { "token", "UNITY" } },

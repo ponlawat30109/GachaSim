@@ -14,8 +14,8 @@ public class InventoryManager : Singleton<InventoryManager>
     public IEnumerator RefreshInventory()
     {
         if (NetworkManager.Instance.CurrentUser == null) yield break;
-        // string url = $"http://localhost:3000/login/refresh?username={NetworkManager.Instance.CurrentUser.name}";
-        string url = $"http://172.236.153.97:3000/login/refresh?username={NetworkManager.Instance.CurrentUser.name}";
+        // string url = $"{ServerConfig.LocalUrl}/login/refresh?username={NetworkManager.Instance.CurrentUser.name}";
+        string url = $"{ServerConfig.RemoteUrl}/login/refresh?username={NetworkManager.Instance.CurrentUser.name}";
         using UnityWebRequest www = UnityWebRequest.Get(url);
         yield return www.SendWebRequest();
         if (www.result == UnityWebRequest.Result.Success)

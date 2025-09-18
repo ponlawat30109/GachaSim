@@ -29,8 +29,8 @@ public class GachaManager : Singleton<GachaManager>
 
     private IEnumerator RefreshGachaDataCoroutine(string username, Action onComplete)
     {
-        // string url = $"http://localhost:3000/login/refresh?username={username}";
-        string url = $"http://172.236.153.97:3000/login/refresh?username={username}";
+        // string url = $"{ServerConfig.LocalUrl}/login/refresh?username={username}";
+        string url = $"{ServerConfig.RemoteUrl}/login/refresh?username={username}";
         using var www = UnityWebRequest.Get(url);
         yield return www.SendWebRequest();
         if (www.result == UnityWebRequest.Result.Success)

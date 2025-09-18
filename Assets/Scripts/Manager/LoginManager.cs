@@ -13,8 +13,8 @@ public class LoginManager : Singleton<LoginManager>
         WWWForm form = new();
         form.AddField("username", username);
 
-        // using UnityWebRequest www = UnityWebRequest.Post("http://localhost:3000/login", form);
-        using UnityWebRequest www = UnityWebRequest.Post("http://172.236.153.97:3000/login", form);
+        // using UnityWebRequest www = UnityWebRequest.Post("{ServerConfig.LocalUrl}/login", form);
+        using UnityWebRequest www = UnityWebRequest.Post($"{ServerConfig.RemoteUrl}/login", form);
         yield return www.SendWebRequest();
 
         if (www.result == UnityWebRequest.Result.Success)
